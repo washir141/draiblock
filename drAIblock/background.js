@@ -31,7 +31,7 @@ async function checkURL(url) {
     try {
         return new Promise(async (resolve) => {
             chrome.storage.local.get("apiKey", async (data) => {
-                const API_KEY = "AIzaSyCW1XE23Mdu5UxrUbamAE1pZN72NEOARL8";
+                const API_KEY = "*********************";// add your own google safe browsing api key
                 if (!API_KEY) {
                     console.error("❌ Safe Browsing API Key is missing.");
                     resolve(false);
