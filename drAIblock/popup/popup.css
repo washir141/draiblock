@@ -1,0 +1,178 @@
+
+@font-face {
+    font-family: 'CorbertExtraBoldWide';
+    src: url('../fonts/Corbert-ExtraBoldWide.woff2') format('woff2');
+}
+@font-face {
+    font-family: "CamphorBold";
+    src: url('../fonts/Camphor-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family:"RoomBlack" ;
+    src: url("../fonts/Room-Black.woff2") format('woff2');
+}
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../fonts/Montserrat-Regular.ttf") format('ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    width: 380px; 
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+}
+#backgroundFrame {
+    position: absolute;
+    top: 20;
+    left: 30;
+    width: 80%;
+    height: 90%;
+    z-index: -1;
+    border: none;
+}
+
+#animationFrame {
+    width: 100%;  /* Adjust width */
+    height: 100%; /* Adjust height */
+    border: none;
+    display: block;
+    background: white; /* Ensure visibility */
+    z-index: -1;
+}
+
+
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:55px;
+    z-index: 30;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 10px;
+}
+#logo {
+    width: 60px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 26px;
+    text-align: center;
+    font-family: 'CamphorBold', sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color:white
+}
+
+#expression {
+    display:flex;
+    align-items:center;
+    color:white;
+    align-self:center;  
+}
+#sub-expression {
+    color:white;
+    font-size:16px;
+    font-family: 'CorbertExtraBoldWide', sans-serif;
+    font-weight:800;
+}
+#sub-expression2 {
+    color:rgb(34, 211, 238);
+    font-family: 'CorbertExtraBoldWide', sans-serif;
+    font-size:16px;
+    font-weight:800;
+}
+#content {
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(26, 25, 25, 0.1);
+    font-family: 'CamphorBold', sans-serif;
+    font-size: small;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 15px;
+}
+#status {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "MontserratRegular",sans-serif;
+    font-size: 14px;
+    color:rgb(250, 250, 250);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin: 5px auto;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.enable-btn {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: none;
+    background:radial-gradient(circle,#250ea7, #1741bc);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 10px rgba(209, 10, 10, 0.5);
+}
+
+/* Glowing Outer Ring */
+.enable-btn::after {
+    content: "";
+    position: absolute;
+    top: -5px; /* Moves the outline away from the button */
+    left: -5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #0e4da7; /* Purple outline */
+    opacity: 0.8;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.enable-btn:active {
+    transform: scale(0.9);
+}
+
+/* Enabled state with green glow */
+.enabled {
+    background: radial-gradient(circle,rgba(34 211 238), #0062ff);
+}
+
+.enabled::after {
+    border-color: rgba(34 211 238); /* Green outline when enabled */
+}
+
