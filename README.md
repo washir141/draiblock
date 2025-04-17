@@ -2,7 +2,7 @@
 Chrome Extension for Malicious Website Detection using Google Safe Browsing API
 
 ## Overview
-Draiblock is a lightweight Chrome extension that protects users from **malicious websites** by automatically checking URLs against Google's Safe Browsing API.
+Drainblock is a lightweight Chrome extension that protects users from **malicious websites** by automatically checking URLs against Google's Safe Browsing API.
 
 ✅ Detects Malware  
 ✅ Blocks Phishing & Social Engineering Sites  
@@ -23,7 +23,7 @@ Draiblock is a lightweight Chrome extension that protects users from **malicious
 ---
 
 ## Installation
-1. Download the **Draiblock** extension from this link https://chromewebstore.google.com/detail/drainblock/gdobafllegdffohfkigakkklilkfocge
+1. Download the **Drainblock** extension from this link https://chromewebstore.google.com/detail/drainblock/gdobafllegdffohfkigakkklilkfocge
 2. Click on the extension icon.
 3. Toggle **Protection ON/OFF** from the popup window.
 
