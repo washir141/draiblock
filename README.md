@@ -1,5 +1,5 @@
 # Drainblock 🔒
-Chrome Extension for Malicious Website Detection using Google Safe Browsing API
+Chrome Extension for Malicious Website/Link Detection
 
 ## Overview
 Drainblock is a lightweight Chrome extension that protects users from **malicious websites** by automatically checking URLs against Google's Safe Browsing API.
