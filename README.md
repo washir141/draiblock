@@ -1,4 +1,4 @@
-# Draiblock 🔒
+# Drainblock 🔒
 Chrome Extension for Malicious Website Detection using Google Safe Browsing API
 
 ## Overview
